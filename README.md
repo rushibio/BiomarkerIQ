@@ -1,6 +1,10 @@
 # BiomarkerIQ 
 <img width="1638" height="977" alt="image" src="https://github.com/user-attachments/assets/35a566d6-c5c1-4221-8110-64d205dfeda5" />
 
+<img width="1341" height="1022" alt="image" src="https://github.com/user-attachments/assets/27dd3cda-9a95-42ff-9347-4e707afdb2a9" />
+<img width="1271" height="1018" alt="image" src="https://github.com/user-attachments/assets/3679769b-f5af-4107-b07b-7de83c530a99" />
+
+
 ## Architecture
 
 ```
