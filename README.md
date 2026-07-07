@@ -1,4 +1,5 @@
-# BiomarkerIQ — Implementation Plan (Approved)
+# BiomarkerIQ 
+<img width="1638" height="977" alt="image" src="https://github.com/user-attachments/assets/35a566d6-c5c1-4221-8110-64d205dfeda5" />
 
 ## Architecture
 
@@ -68,21 +69,4 @@ biomarkeriq/
     └── index.css              ← Dark theme, glassmorphism, animations
 ```
 
-## API Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/` | Health check |
-| `GET` | `/api/config/status` | Check if API key is configured |
-| `POST` | `/api/research` | Start research job → returns job_id |
-| `GET` | `/api/research/{job_id}` | Poll job status + partial results |
-| `GET` | `/api/report/{job_id}/export?format=markdown\|pdf` | Download report |
-
-## Key Decisions (from user)
-
-- ✅ API key loaded from `.env` only — never hardcoded
-- ✅ Simple polling (no SSE) — 3-second intervals
-- ✅ No embedded 3D viewer — PDB IDs + external links only
-- ✅ Markdown first, then PDF via weasyprint
-- ✅ All 7 agents using Google ADK `LlmAgent`
-- ✅ Modular design — streaming/3D viewer can be added later
